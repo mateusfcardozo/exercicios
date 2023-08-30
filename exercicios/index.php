@@ -32,6 +32,7 @@
 
 <body>
 <h1>Lista de Exercícios</h1>
+<a href="../">Voltar para a tela inicial</a>
     <ul>
         <li>
             <a href="exercicio1/index.php">Exercício 1</a>
@@ -67,6 +68,10 @@
         </li>
         <li>
             <a href="exercicio9/index.php">Exercício 9</a>
+            <p>30/08/24</p>
+        </li>
+        <li>
+            <a href="exercicio10/index.php">Exercício 10</a>
             <p>30/08/24</p>
         </li>
     </ul>

@@ -74,7 +74,23 @@
             transform: rotate(360deg);
         }
     }
-    
+</style>
+<style>
+     .button{
+
+       padding: 10px 8px;
+       width: 50px;
+       color: #fff;
+       background: #209915;
+       border: 1px solid #555;
+       border-radius: 5px;
+       text-align: center;
+       user-select: none;
+       cursor: pointer;
+    }
+    .button:hover{
+        background: #19ee05;transition: background 1s;
+    }
 </style>
 </head>
 <body>
@@ -84,5 +100,8 @@
         <div class="lua"></div>
     </div>
 </div>
+
+<button class="button">sair</button>
+
 </body>
 </html>
