@@ -13,6 +13,8 @@ então o empréstimo será negado. -->
 </head>
 
 <body>
+<h1>Exercício 1</h1>
+<p>29/08/24</p>
     <?php
     $valor_da_casa = 300000;
     $salario_do_comprador = 5000;
@@ -25,10 +27,10 @@ então o empréstimo será negado. -->
     }else{
         echo"empréstimo negado! a prestação excede os 30% do salario";
     }
-
-
-
     ?>
+     <br>
+     <br>
+     <a href="../index.php">Voltar para a lista de exercícios</a>
 </body>
 
 </html>

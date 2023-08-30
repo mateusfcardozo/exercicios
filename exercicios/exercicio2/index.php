@@ -14,6 +14,8 @@ mostrando uma mensagem no final, de acordo com a média atingida:
 </head>
 
 <body>
+<h1>Exercício 2</h1>
+<p>29/08/24</p>
     <?php
     $nota1 = 4.9;
     $nota2 = 0;
@@ -28,6 +30,9 @@ mostrando uma mensagem no final, de acordo com a média atingida:
         echo "você esta aprovado";
     }
     ?>
+     <br>
+     <br>
+     <a href="../index.php">Voltar para a lista de exercícios</a>
 </body>
 
 </html>

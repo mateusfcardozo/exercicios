@@ -15,6 +15,8 @@ reajustado de acordo com a tabela a seguir:
 </head>
 
 <body>
+<h1>Exercício 1</h1>
+<p>29/08/24</p>
     <?php
     $nome = "mateus";
     $salario = 300;
@@ -30,6 +32,9 @@ reajustado de acordo com a tabela a seguir:
     }
     echo "nome:". $nome. " seu novo salario e:".number_format($novosalario,2). " e esta na empresa há:". $anos_na_empresa;
     ?>
+     <br>
+     <br>
+     <a href="../index.php">Voltar para a lista de exercícios</a>
 </body>
 
 </html>

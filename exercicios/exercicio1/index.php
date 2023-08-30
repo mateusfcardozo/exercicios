@@ -15,6 +15,8 @@ mostrando na tela uma das mensagens abaixo:
 </head>
 
 <body>
+<h1>Exercício 1</h1>
+<p>29/08/24</p>
     <?php
     $number1 = 10;
     $number2 = 5;
@@ -27,6 +29,9 @@ mostrando na tela uma das mensagens abaixo:
         echo "os dois números sao iguais";
     }
     ?>
+     <br>
+     <br>
+      <a href="../index.php">Voltar para a lista de exercícios</a>
 </body>
 
 </html>
