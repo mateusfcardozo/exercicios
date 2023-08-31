@@ -1,40 +1,58 @@
-<!-- Desenvolva um programa que leia o nome de um funcionário, seu salário,
-quantos anos ele trabalha na empresa e mostre seu novo salário,
-reajustado de acordo com a tabela a seguir:
-   - Até 3 anos de empresa: aumento de 3%
-   - entre 3 e 10 anos: aumento de 12.5%
-   - 10 anos ou mais: aumento de 20% -->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercício 4</title>
+    <title>Exercício 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .result {
+            font-weight: bold;
+        }
+
+        .back-link {
+            margin-top: 20px;
+            display: block;
+            color: #007BFF;
+        }
+    </style>
 </head>
-
 <body>
-<h1>Exercício 1</h1>
-<p>29/08/24</p>
-    <?php
-    $nome = "mateus";
-    $salario = 300;
-    $novosalario = 0;
-    $anos_na_empresa = 10;
-
-    if ($anos_na_empresa <= 3) {
-        $novosalario = $salario + ($salario * 0.03);
-    } elseif ($anos_na_empresa > 3 and $anos_na_empresa <= 10) {
-        $novosalario = $salario + ($salario * 0.125);
-    } else {
-        $novosalario = $salario + ($salario * 0.20);
-    }
-    echo "nome:". $nome. " seu novo salario e:".number_format($novosalario,2). " e esta na empresa há:". $anos_na_empresa;
-    ?>
-     <br>
-     <br>
-     <a href="../index.php">Voltar para a lista de exercícios</a>
+    <h1>Exercício 4</h1>
+    <p>Desenvolva um programa que leia o nome de um funcionário, seu salário,
+<br>
+quantos anos ele trabalha na empresa e mostre seu novo salário,
+<br>
+reajustado de acordo com a tabela a seguir:
+<br>
+   - Até 3 anos de empresa: aumento de 3%
+   <br>
+   - entre 3 e 10 anos: aumento de 12.5%
+   <br>
+   - 10 anos ou mais: aumento de 20%</p>
+    <form action="processar.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome">
+        <br>
+        <label for="salario">Salário:</label>
+        <input type="number" name="salario">
+        <br>
+        <label for="anos">Anos de trabalho na empresa:</label>
+        <input type="number" name="anos">
+        <br>
+        <input type="submit" value="Calcular">
+    </form>
+    <a href="../index.php">Voltar para a lista de exercícios</a>
 </body>
-
 </html>

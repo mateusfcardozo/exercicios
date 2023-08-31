@@ -70,12 +70,6 @@
             <a href="exercicio9/index.php">Exercício 9</a>
             <p>30/08/24</p>
         </li>
-        <li>
-            <a href="exercicio10/index.php">Exercício 10</a>
-            <p>30/08/24</p>
-        </li>
     </ul>
 </body>
-
 </html>
-
