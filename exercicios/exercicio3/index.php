@@ -19,9 +19,11 @@ desse terreno, de acordo com a lista abaixo:
     <p>29/08/24</p>
     <label for="largula">Qual a largula?</label>
     <br>
+    <label for="comprimento">Qual o comprimento?</label>
+    <br>
     <?php
-    $largura = 10;
-    $comprimento = 20;
+    $largura = '';
+    $comprimento = '';
 
     $area = $largura * $comprimento;
 
