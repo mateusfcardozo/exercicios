@@ -15,11 +15,13 @@ desse terreno, de acordo com a lista abaixo:
 </head>
 
 <body>
-<h1>Exercício 1</h1>
-<p>29/08/24</p>
+    <h1>Exercício 1</h1>
+    <p>29/08/24</p>
+    <label for="largula">Qual a largula?</label>
+    <br>
     <?php
-    $largura = 10; 
-    $comprimento = 20; 
+    $largura = 10;
+    $comprimento = 20;
 
     $area = $largura * $comprimento;
 
@@ -31,9 +33,9 @@ desse terreno, de acordo com a lista abaixo:
         echo "Área: $area m² - TERRENO VIP";
     }
     ?>
-     <br>
-     <br>
-     <a href="../index.php">Voltar para a lista de exercícios</a>
+    <br>
+    <br>
+    <a href="../index.php">Voltar para a lista de exercícios</a>
 </body>
 
 </html>

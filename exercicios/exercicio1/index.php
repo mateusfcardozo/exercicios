@@ -18,6 +18,7 @@ mostrando na tela uma das mensagens abaixo:
 <h1>Exercício 1</h1>
 <p>29/08/24</p>
     <?php
+    
     $number1 = 10;
     $number2 = 5;
 
