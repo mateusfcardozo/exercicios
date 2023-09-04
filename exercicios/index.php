@@ -1,48 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 1</title>
+    <title>Exercícios</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
-        h1 {
-            color: #333;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
         }
+
+        a {
+            text-decoration: none;
+            color: blue;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
         p {
-            color: #666;
-        }
-        .result {
-            font-weight: bold;
-        }
-        .back-link {
-            margin-top: 20px;
-            display: block;
-            color: #007BFF;
+            font-size: 16px;
         }
     </style>
 </head>
+
 <body>
-    <h1>Exercício 1</h1>
-    <p>Escreva um algoritmo que leia dois números inteiros e compare-os,
-mostrando na tela uma das mensagens abaixo:
-<br>
-   - O primeiro valor é o maior
-   <br>
-   - O segundo valor é o maior
-   <br>
-   - Não existe valor maior, os dois são iguais</p>
-    <form action="processar.php" method="post">
-        <label for="number1">Número 1:</label>
-        <input type="number" name="number1">
-        <br>
-        <label for="number2">Número 2:</label>
-        <input type="number" name="number2">
-        <br>
-        <input type="submit" value="Comparar">
-    </form>
-    <a class="back-link" href="../index.php">Voltar para a lista de exercícios</a>
+<h1>Lista de Exercícios</h1>
+<a href="../">Voltar para a tela inicial</a>
+    <ul>
+        <li>
+            <a href="index1.php">Exercício 1</a>
+            <p>29/08/24</p>
+        </li>
+        <li>
+            <a href="exercicio2/index.php">Exercício 2</a>
+            <p>29/08/24</p>
+        </li>
+        <li>
+            <a href="exercicio3/index.php">Exercício 3</a>
+            <p>29/08/24</p>
+        </li>
+        <li>
+            <a href="exercicio4/index.php">Exercício 4</a>
+            <p>29/08/24</p>
+        </li>
+        <li>
+            <a href="exercicio5/index.php">Exercício 5</a>
+            <p>29/08/24</p>
+        </li>
+        <li>
+            <a href="exercicio6/index.php">Exercício 6</a>
+            <p>30/08/24</p>
+        </li>
+        <li>
+            <a href="exercicio7/index.php">Exercício 7</a>
+            <p>30/08/24</p>
+        </li>
+        <li>
+            <a href="exercicio8/index.php">Exercício 8</a>
+            <p>30/08/24</p>
+        </li>
+        <li>
+            <a href="exercicio9/index.php">Exercício 9</a>
+            <p>30/08/24</p>
+        </li>
+        <li>
+            <a href="exercicio10/index.php">Exercício 10</a>
+            <p>01/09/24</p>
+        </li>
+        <li>
+            <a href="exercicio11/index.php">Exercício 11</a>
+            <p>01/09/24</p>
+        </li>
+        <li>
+            <a href="exercicio12/index.php">Exercício 12</a>
+            <p>01/09/24</p>
+        </li>
+        <li>
+            <a href="exercicio13/index.php">Exercício 13</a>
+            <p>01/09/24</p>
+        </li>
+        <li>
+            <a href="exercicio14/index.php">Exercício 14</a>
+            <p>01/09/24</p>
+        </li>
+    </ul>
 </body>
 </html>
