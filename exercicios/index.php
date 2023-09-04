@@ -35,7 +35,7 @@
 <a href="../">Voltar para a tela inicial</a>
     <ul>
         <li>
-            <a href="index1.php">Exercício 1</a>
+            <a href="exercicio1/index.php">Exercício 1</a>
             <p>29/08/24</p>
         </li>
         <li>
