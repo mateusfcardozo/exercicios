@@ -28,11 +28,12 @@
     <h1>Exercício 11</h1>
     <p>Entrar com um número e informar se ele é divisível por 10, por 5, por 2 ou se não é divisível por nenhum destes</p>
     <form action="processar.php" method="post">
-        <label for="number">Número:</label>
-        <input type="number" name="number">
-        <br>
-        <input type="submit" value="">
+        <label for="numero">Digite um número: </label>
+        <input type="number" name="numero" required>
+        <br><br>
+        <input type="submit" value="Verificar Divisibilidade">
     </form>
-    <a class="back-link" href="../index.php">Voltar para a lista de exercícios</a>
+    <br>
+    <a href="../index.php">Voltar para a lista de exercícios</a>
 </body>
 </html>

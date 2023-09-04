@@ -28,11 +28,12 @@
     <h1>Exercício 14</h1>
     <p>Criar um algoritmos que leia um número e imprima todos os número de 1 até ele</p>
     <form action="processar.php" method="post">
-        <label for="number">Número :</label>
-        <input type="number" name="number">
-        <br>
-        <input type="submit" value="">
+        <label for="numero">Digite um número: </label>
+        <input type="number" name="numero" required>
+        <br><br>
+        <input type="submit" value="Exibir Números">
     </form>
-    <a class="back-link" href="../index.php">Voltar para a lista de exercícios</a>
+    <br>
+    <a href="../index.php">Voltar para a lista de exercícios</a>
 </body>
 </html>

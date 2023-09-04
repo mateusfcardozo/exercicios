@@ -29,15 +29,16 @@
     <p>Construir um algoritmo que leia 2 números e efetue a adição. <br>
         Caso o valor somado seja maior que 20, este deverá ser apresentando somando-se a ele mais 8; <br>
         caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-se 5</p>
-    <form action="processar.php" method="post">
-        <label for="number1">Número 1:</label>
-        <input type="number" name="number1">
-        <br>
-        <label for="number2">Número 2:</label>
-        <input type="number" name="number2">
-        <br>
-        <input type="submit" value="somar">
+        <form action="processar.php" method="post">
+        <label for="numero1">Digite o primeiro número: </label>
+        <input type="number" name="numero1" required>
+        <br><br>
+        <label for="numero2">Digite o segundo número: </label>
+        <input type="number" name="numero2" required>
+        <br><br>
+        <input type="submit" value="Calcular">
     </form>
-    <a class="back-link" href="../index.php">Voltar para a lista de exercícios</a>
+    <br>
+    <a href="../index.php">Voltar para a lista de exercícios</a>
 </body>
 </html>
