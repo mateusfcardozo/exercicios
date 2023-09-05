@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultado - Exercício 12</title>
+    <title>Resultado - Exercício 3</title>
 </head>
 <body>
-    <h1>Resultado - Exercício 12</h1>
+    <h1>Resultado - Exercício 3</h1>
     <?php
     $numero1 = $_POST['numero1'];
     $numero2 = $_POST['numero2'];

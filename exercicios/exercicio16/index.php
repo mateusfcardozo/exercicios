@@ -26,14 +26,19 @@
 </head>
 <body>
     <h1>Exercício 2</h1>
-    <p>Entrar com um número e informar se ele é divisível por 10, por 5, por 2 ou se não é divisível por nenhum destes</p>
+    <p>Entre com 10 números e armazene em um vetor. Ao final o programa deverá mostrar: 
+        <br>- quantos negativos foram digitados; 
+        <br>- quantos positivos foram digitados; 
+        <br>- quantos pares e ímpares.</p>
     <form action="processar.php" method="post">
-        <label for="numero">Digite um número: </label>
-        <input type="number" name="numero" required>
-        <br><br>
-        <input type="submit" value="Verificar Divisibilidade">
+        <?php
+        for ($i = 1; $i <= 10; $i++) {
+            echo "<label for='numero$i'>Número $i:</label>";
+            echo "<input type='number' name='numero$i'><br>";
+        }
+        ?>
+        <input type="submit" value="Contar">
     </form>
-    <br>
-    <a href="../index.php">Voltar para a lista de exercícios</a>
+    <a class="back-link" href="../index.php">Voltar para a lista de exercícios</a>
 </body>
 </html>
