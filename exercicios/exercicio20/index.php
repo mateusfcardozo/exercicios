@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 2</title>
+    <title>Exercício 6</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,9 +14,6 @@
         p {
             color: #666;
         }
-        .result {
-            font-weight: bold;
-        }
         .back-link {
             margin-top: 20px;
             display: block;
@@ -25,15 +22,17 @@
     </style>
 </head>
 <body>
-    <h1>Exercício 2</h1>
-    <p>Entrar com um número e informar se ele é divisível por 10, por 5, por 2 ou se não é divisível por nenhum destes</p>
+    <h1>Exercício 6</h1>
+    <p>Faça um programa que leia 10 valores e os escreva na ordem contrária à que foram digitados.</p>
     <form action="processar.php" method="post">
-        <label for="numero">Digite um número: </label>
-        <input type="number" name="numero" required>
-        <br><br>
-        <input type="submit" value="Verificar Divisibilidade">
+        <?php
+        for ($i = 1; $i <= 10; $i++) {
+            echo "<label for='valor$i'>Valor $i:</label>";
+            echo "<input type='number' name='valor$i'><br>";
+        }
+        ?>
+        <input type="submit" value="Inverter Ordem">
     </form>
-    <br>
-    <a href="../index.php">Voltar para a lista de exercícios</a>
+    <a class="back-link" href="../index.php">Voltar para a lista de exercícios</a>
 </body>
 </html>

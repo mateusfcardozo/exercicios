@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 13</title>
+    <title>Exercício 4</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,15 +25,16 @@
     </style>
 </head>
 <body>
-    <h1>Exercício 13</h1>
+    <h1>Exercício 4</h1>
     <p>Ler um número inteiro entre 1 e 12 e escrever o mês correspondente. <br>
         Caso o número seja fora desse intervalo, informar que não existe mês com este número</p>
-    <form action="processar.php" method="post">
-        <label for="number">Número :</label>
-        <input type="number" name="number">
-        <br>
-        <input type="submit" value="">
+        <form action="processar.php" method="post">
+        <label for="numero">Digite um número (1 a 12): </label>
+        <input type="number" name="numero" required min="1" max="12">
+        <br><br>
+        <input type="submit" value="Verificar Mês">
     </form>
-    <a class="back-link" href="../index.php">Voltar para a lista de exercícios</a>
+    <br>
+    <a href="../index.php">Voltar para a lista de exercícios</a>
 </body>
 </html>

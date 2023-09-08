@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 14</title>
+    <title>Exercício 5</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,14 +25,15 @@
     </style>
 </head>
 <body>
-    <h1>Exercício 14</h1>
+    <h1>Exercício 5</h1>
     <p>Criar um algoritmos que leia um número e imprima todos os número de 1 até ele</p>
     <form action="processar.php" method="post">
-        <label for="number">Número :</label>
-        <input type="number" name="number">
-        <br>
-        <input type="submit" value="">
+        <label for="numero">Digite um número: </label>
+        <input type="number" name="numero" required>
+        <br><br>
+        <input type="submit" value="Exibir Números">
     </form>
-    <a class="back-link" href="../index.php">Voltar para a lista de exercícios</a>
+    <br>
+    <a href="../index.php">Voltar para a lista de exercícios</a>
 </body>
 </html>
