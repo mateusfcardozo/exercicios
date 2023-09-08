@@ -27,12 +27,81 @@
         p {
             font-size: 16px;
         }
+        h1 {
+         bottom: 0px;
+         right: -0px;
+         font-size: 16;
+         font-weight: 200;
+         text-decoration: none;
+         display: inline-block;
+         color: black;
+         padding: 1px 8px;
+         border: black 2px solid;
+         border-radius: 8px;
+
+          /* box-shadow: inset 0 0 8px 0 #5c244c, 0 0 8px 0 #5c244c;
+         text-shadow: 0 0 4px hsl(0 0% 100% / 0.3), 0 0 8px; */
+         position: relative;
+
+      }
+        h2 {
+         bottom: 0px;
+         right: -0px;
+         font-size: 16;
+         font-weight: 200;
+         text-decoration: none;
+         display: inline-block;
+         color: black;
+         padding: 1px 8px;
+         border: black 2px solid;
+         border-radius: 8px;
+
+        /* box-shadow: inset 0 0 8px 0 #5c244c, 0 0 8px 0 #5c244c;
+         text-shadow: 0 0 4px hsl(0 0% 100% / 0.3), 0 0 8px; */
+         position: relative;
+
+
+      }
+      h3 {
+         bottom: 0px;
+         right: -0px;
+         font-size: 16;
+         font-weight: 200;
+         text-decoration: none;
+         display: inline-block;
+         color: black;
+         padding: 1px 8px;
+         border: black 2px solid;
+         border-radius: 8px;
+
+          /* box-shadow: inset 0 0 8px 0 #5c244c, 0 0 8px 0 #5c244c;
+         text-shadow: 0 0 4px hsl(0 0% 100% / 0.3), 0 0 8px; */
+         position: relative;
+
+      }
+      .button1 {
+        bottom: 0px;
+         right: -0px;
+         font-size: 16;
+         font-weight: 200;
+         text-decoration: none;
+         display: inline-block;
+         color: black;
+         padding: 1px 8px;
+         border: black 2px solid;
+         border-radius: 8px;
+
+         /* box-shadow: inset 0 0 8px 0 #5c244c, 0 0 8px 0 #5c244c;
+         text-shadow: 0 0 4px hsl(0 0% 100% / 0.3), 0 0 8px; */
+         position: relative;
+
+      }
     </style>
 </head>
 
 <body>
 <h1>Lista de Exercícios</h1>
-<a href="../">Voltar para a tela inicial</a>
+<br>
     <ul>
         <li>
             <a href="exercicio1/index.php">Exercício 1</a>
@@ -127,6 +196,9 @@
         <li>
             <a href="exercicio23/index.php">Exercício 9</a>
             <p>04/09/23</p>
+        </li>
+        <li>
+        <a href="../" class="button1">Voltar para a tela inicial</a>
         </li>
     </ul>
 </body>
