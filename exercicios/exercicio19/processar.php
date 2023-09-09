@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 5 - Resultado</title>
 </head>
+
 <body>
     <h1>Exercício 5 - Resultado</h1>
     <?php
@@ -33,4 +35,5 @@
     ?>
     <a class="back-link" href="../index.php">Voltar para a lista de exercícios</a>
 </body>
+
 </html>
