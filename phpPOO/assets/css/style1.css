@@ -96,7 +96,7 @@ header1 {
     background: transparent;
     border: 2px solid #fff;
     outline: none;
-    border-radius: 6px;
+    border-radius: 20%;
     cursor: pointer;
     font-size: 1.1em;
     color: #fff;
