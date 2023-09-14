@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
 }
 body {
   display: flex;
@@ -12,7 +12,7 @@ body {
   background: url() no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: white;
+  background-color: azure;
 }
 header1 {
   position: fixed;
@@ -50,7 +50,7 @@ header1 {
   border-radius: 5px;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform 0.5s;
+  transition: 0.5s;
 }
 .navegacao a:hover::after {
   transform-origin: left;
@@ -110,10 +110,10 @@ header1 {
   background: #fff;
   color: black;
 }
-.Login-popup {
+.Login-cadastro-popup {
   position: relative;
   width: 400px;
-  height: 440px;
+  height: 450px;
   background: transparent;
   border: 2px solid black;
   border-radius: 20px;
@@ -123,18 +123,43 @@ header1 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  transform: scale(0);
+  transition: .5s ease, .2s ease;
 }
-.Login-popup .form-box-login {
+.Login-cadastro-popup.ativar-popup{
+  transform: scale(1);
+}
+.Login-cadastro-popup.ativo {
+  height: 650px;
+}
+.Login-cadastro-popup .form-box-Login {
   width: 100%;
   padding: 40px;
 }
-.Login-popup .icon-fechar {
+.Login-cadastro-popup .form-box-Login {
+  transition: 0.18s ease;
+  transform: translateX(0);
+}
+.Login-cadastro-popup.ativo .form-box-Login {
+  transition: none;
+  transform: translateX(-400px);
+}
+
+.Login-cadastro-popup .form-box-cadastro {
+  position: absolute;
+  transform: translateX(400px);
+}
+.Login-cadastro-popup.ativo .form-box-cadastro {
+  transition: 0.18s ease;
+  transform: translateX(0);
+}
+.Login-cadastro-popup .icon-fechar {
   position: absolute;
   top: 0;
   right: 0;
   width: 45px;
   height: 45px;
-  background:#162938 ;
+  background: #162938;
   font-size: 2em;
   color: #fff;
   display: flex;
@@ -144,16 +169,15 @@ header1 {
   cursor: pointer;
   z-index: 1;
 }
-.form-box-login,
-h3 {
-  font-size: 2em;
+.Login-cadastro-popup h3 {
+  font-size: 3em;
   color: #162938;
   text-align: center;
 }
 .input-box {
   position: relative;
   width: 100%;
-  height: 18px;
+  height: 50px;
   border-bottom: 2px solid #162938;
   margin: 30px 0;
 }
@@ -215,4 +239,16 @@ h3 {
 }
 .cadastro-login p a:hover {
   text-decoration: underline;
+}
+.botaocadastro{
+  width: 100%;
+  height: 45px;
+  background: #162938;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
 }
