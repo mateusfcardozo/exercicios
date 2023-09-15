@@ -74,24 +74,6 @@ header1 {
   background: #fff;
   color: black;
 }
-/* .navegacao .botaoCadastro-popup {
-  width: 130px;
-  height: 50px;
-  background: transparent;
-  border: 2px solid #fff;
-  outline: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1.1em;
-  color: #fff;
-  font-weight: 500;
-  margin-left: 40px;
-  transition: 0.5s;
-}
-.navegacao .botaoCadastro-popup:hover {
-  background: #fff;
-  color: black;
-} */
 .navegacao .botao-mode {
   width: 50px;
   height: 40px;

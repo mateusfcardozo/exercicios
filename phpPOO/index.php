@@ -10,40 +10,6 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script>
-        function enviarFormulario(tipo) {
-            var formData;
-            var formId;
-
-            if (tipo === 'login') {
-                formData = new FormData(document.getElementById('form-login'));
-                formId = 'form-login';
-            } else if (tipo === 'cadastro') {
-                formData = new FormData(document.getElementById('form-cadastro'));
-                formId = 'form-cadastro';
-            }
-
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', tipo + '.php', true);
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    // Manipule a resposta aqui
-                    var resposta = xhr.responseText;
-                    if (resposta === 'sucesso') {
-                        // Redirecione ou realize outras ações de acordo com o resultado
-                        alert('Operação bem-sucedida');
-                    } else {
-                        // Exiba uma mensagem de erro
-                        alert('Erro: ' + resposta);
-                    }
-
-                    // Limpe o formulário após o processamento
-                    document.getElementById(formId).reset();
-                }
-            };
-            xhr.send(formData);
-        }
-    </script>
 </head>
 
 <body>
@@ -70,15 +36,14 @@
                 <div class="input-box">
                     <input type="password" name="senha" placeholder="Senha" required>
                 </div>
-
                 <div class="lembrar-senha">
                     <label> <input type="checkbox">Lembrar senha</label>
                     <a href="#">Esqueci a senha?</a>
                 </div>
-                <button type="button" class="botaoLogin" onclick="enviarFormulario('login')">Login</button>
+                <button type="button" class="botaoLogin">Login</button>
                 <div class="cadastro-login">
                     <p>Não tem conta?
-                        <a href="#" class="link-cadastro" onclick="mostrarCadastro()">Cadastrar-se</a>
+                        <a href="#" class="link-cadastro">Cadastrar-se</a>
                     </p>
                 </div>
             </form>
@@ -106,7 +71,7 @@
                 <div class="lembrar-senha">
                     <label> <input type="checkbox" name="termos">Aceito os termos e condições</label>
                 </div>
-                <button type="button" class="botaocadastro" onclick="enviarFormulario('cadastro')">Cadastrar-se</button>
+                <button type="button" class="botaocadastro">Cadastrar-se</button>
                 <div class="cadastro-login">
                     <p>Já tem uma conta?
                         <a href="#" class="link-login" onclick="mostrarLogin()">Login</a>

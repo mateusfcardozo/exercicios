@@ -19,19 +19,3 @@ document.addEventListener("DOMContentLoaded", () => {
     Logincadastropopup.classList.remove("ativo");
   });
 });
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const Logincadastropopup = document.querySelector('.Login-cadastro-popup');
-    const linkLogin = document.querySelector('.Link-login');
-    const linkcadastro = document.querySelector('.Link-cadastro');
-
-    linkcadastro.addEventListener('click', () => {
-        Logincadastropopup.classList.add('ativo');
-    });
-
-    linkLogin.addEventListener('click', () => {
-        Logincadastropopup.classList.remove('ativo');
-    });
-});
