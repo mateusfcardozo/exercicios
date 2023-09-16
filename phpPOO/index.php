@@ -21,7 +21,7 @@
             <a href="">Serviços</a>
             <a href="">Contato</a>
             <button class="botaoLogin-popup" onclick="mostrarLogin()">Login</button>
-            <button class="botao-mode">Cor</button>
+            <!-- <button class="botao-mode">Cor</button> -->
         </nav>
     </header1>
     <div class="Login-cadastro-popup" id="loginCadastroPopup">
