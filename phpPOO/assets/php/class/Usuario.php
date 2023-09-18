@@ -1,107 +1,125 @@
-<?php 
-class Usuario{
-private int $id_user;
-private string $Nome_Usuario;
-private int $Idade_Usuario;
-private int $CFP_Usuario;
-private string $Endereco_Usuario;
-private string $Senha_Usuario;
-private float $Valor_Usuario;
-private bool $Status_Usuario;
-
-public function getIdUser(): int
+<?php
+class Usuario
 {
-return $this->id_user;
-}
+    private int $id;
+    private string $nome;
+    private string $cpf;
+    private string $endereco;
+    private int $idade;
+    private string $senha;
+    private float $valor;
+    private bool $status;
+    private ?int $extrato_id;
 
-public function setIdUser(int $id_user): self
-{
-$this->id_user = $id_user;
+    public function getId(): int
+    {
+        return $this->id;
+    }
 
-return $this;
-}
+    public function setId(int $id): self
+    {
+        $this->id = $id;
+        return $this;
+    }
 
-public function getNomeUsuario(): string
-{
-return $this->Nome_Usuario;
-}
-public function setNomeUsuario(string $Nome_Usuario): self
-{
-$this->Nome_Usuario = $Nome_Usuario;
+    public function getNome(): string
+    {
+        return $this->nome;
+    }
 
-return $this;
-}
+    public function setNome(string $nome): self
+    {
+        $this->nome = $nome;
+        return $this;
+    }
 
-public function getIdadeUsuario(): int
-{
-return $this->Idade_Usuario;
-}
+    public function getCpf(): string
+    {
+        return $this->cpf;
+    }
 
-public function setIdadeUsuario(int $Idade_Usuario): self
-{
-$this->Idade_Usuario = $Idade_Usuario;
+    public function setCpf(string $cpf): self
+    {
+        $this->cpf = $cpf;
+        return $this;
+    }
 
-return $this;
-}
+    public function getEndereco(): string
+    {
+        return $this->endereco;
+    }
 
-public function getCFPUsuario(): int
-{
-return $this->CFP_Usuario;
-}
+    public function setEndereco(string $endereco): self
+    {
+        $this->endereco = $endereco;
+        return $this;
+    }
 
-public function setCFPUsuario(int $CFP_Usuario): self
-{
-$this->CFP_Usuario = $CFP_Usuario;
+    public function getIdade(): int
+    {
+        return $this->idade;
+    }
 
-return $this;
-}
+    public function setIdade(int $idade): self
+    {
+        $this->idade = $idade;
+        return $this;
+    }
 
-public function getEnderecoUsuario(): string
-{
-return $this->Endereco_Usuario;
-}
+    public function getSenha(): string
+    {
+        return $this->senha;
+    }
 
-public function setEnderecoUsuario(string $Endereco_Usuario): self
-{
-$this->Endereco_Usuario = $Endereco_Usuario;
+    public function setSenha(string $senha): self
+    {
+        $this->senha = $senha;
+        return $this;
+    }
 
-return $this;
-}
+    public function getValor(): float
+    {
+        return $this->valor;
+    }
 
-public function getSenhaUsuario(): string
-{
-return $this->Senha_Usuario;
-}
+    public function setValor(float $valor): self
+    {
+        $this->valor = $valor;
+        return $this;
+    }
 
-public function setSenhaUsuario(string $Senha_Usuario): self
-{
-$this->Senha_Usuario = $Senha_Usuario;
+    public function isStatus(): bool
+    {
+        return $this->status;
+    }
 
-return $this;
-}
+    public function setStatus(bool $status): self
+    {
+        $this->status = $status;
+        return $this;
+    }
 
-public function getValorUsuario(): float
-{
-return $this->Valor_Usuario;
-}
+    public function getExtratoId(): ?int
+    {
+        return $this->extrato_id;
+    }
 
-public function setValorUsuario(float $Valor_Usuario): self
-{
-$this->Valor_Usuario = $Valor_Usuario;
+    public function setExtratoId(?int $extrato_id): self
+    {
+        $this->extrato_id = $extrato_id;
+        return $this;
+    }
 
-return $this;
-}
-
-public function isStatusUsuario(): bool
-{
-return $this->Status_Usuario;
-}
-
-public function setStatusUsuario(bool $Status_Usuario): self
-{
-$this->Status_Usuario = $Status_Usuario;
-
-return $this;
-}
+    // Adicione aqui um método para obter o extrato do usuário
+    public function obterExtrato(): array
+    {
+        // Aqui você irá buscar o extrato do usuário no banco de dados e retorná-lo
+        // Retorna um array com as transações do extrato (data, tipo, valor)
+        return [
+            ['data' => '2023-09-17 10:00:00', 'tipo' => 'Depósito', 'valor' => 100.00],
+            ['data' => '2023-09-17 12:30:00', 'tipo' => 'Saque', 'valor' => 50.00],
+            // ... Adicione outras transações do extrato aqui
+        ];
+    }
 }
 ?>

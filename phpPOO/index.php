@@ -29,7 +29,7 @@
         <div class="form-box-Login">
             <h3>Login</h3>
             <br>
-            <form id="form-login">
+            <form id="form-login" action="admin.php">
                 <div class="input-box">
                     <input type="text" name="cpf" placeholder="CPF" required maxlength="11" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
                 </div>
@@ -40,7 +40,7 @@
                     <label> <input type="checkbox">Lembrar senha</label>
                     <a href="#">Esqueci a senha?</a>
                 </div>
-                <button type="button" class="botaoLogin">Login</button>
+                <button type="submit" class="botaoLogin">Login</button>
                 <div class="cadastro-login">
                     <p>Não tem conta?
                         <a href="#" class="link-cadastro">Cadastrar-se</a>
@@ -51,7 +51,7 @@
         <div class="form-box-cadastro">
             <h3>Cadastro</h3>
             <br>
-            <form id="form-cadastro">
+            <form id="form-cadastro" action="admin.php">
                 <div class="input-box">
                     <input type="text" name="nome" placeholder="Nome" required>
                 </div>
