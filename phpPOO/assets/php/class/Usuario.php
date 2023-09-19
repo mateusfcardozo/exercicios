@@ -1,101 +1,108 @@
 <?php
 class Usuario
 {
-    private int $id;
-    private string $nome;
-    private string $cpf;
-    private string $endereco;
-    private int $idade;
-    private string $senha;
-    private float $valor;
-    private bool $status;
+    private int $id_Usuario;
+    private string $nome_Usuario;
+    private string $cpf_Usuario;
+    private string $endereco_Usuario;
+    private int $idade_Usuario;
+    private string $senha_Usuario;
+    private float $valor_Usuario;
+    private bool $status_Usuario;
     private ?int $extrato_id;
-
-    public function getId(): int
+    public function getIdUsuario(): int
     {
-        return $this->id;
+        return $this->id_Usuario;
     }
 
-    public function setId(int $id): self
+    public function setIdUsuario(int $id_Usuario): self
     {
-        $this->id = $id;
+        $this->id_Usuario = $id_Usuario;
+
         return $this;
     }
 
-    public function getNome(): string
+    public function getNomeUsuario(): string
     {
-        return $this->nome;
+        return $this->nome_Usuario;
     }
 
-    public function setNome(string $nome): self
+    public function setNomeUsuario(string $nome_Usuario): self
     {
-        $this->nome = $nome;
+        $this->nome_Usuario = $nome_Usuario;
+
         return $this;
     }
 
-    public function getCpf(): string
+    public function getCpfUsuario(): string
     {
-        return $this->cpf;
+        return $this->cpf_Usuario;
     }
 
-    public function setCpf(string $cpf): self
+    public function setCpfUsuario(string $cpf_Usuario): self
     {
-        $this->cpf = $cpf;
+        $this->cpf_Usuario = $cpf_Usuario;
+
         return $this;
     }
 
-    public function getEndereco(): string
+    public function getEnderecoUsuario(): string
     {
-        return $this->endereco;
+        return $this->endereco_Usuario;
     }
 
-    public function setEndereco(string $endereco): self
+    public function setEnderecoUsuario(string $endereco_Usuario): self
     {
-        $this->endereco = $endereco;
+        $this->endereco_Usuario = $endereco_Usuario;
+
         return $this;
     }
 
-    public function getIdade(): int
+    public function getIdadeUsuario(): int
     {
-        return $this->idade;
+        return $this->idade_Usuario;
     }
 
-    public function setIdade(int $idade): self
+    public function setIdadeUsuario(int $idade_Usuario): self
     {
-        $this->idade = $idade;
+        $this->idade_Usuario = $idade_Usuario;
+
         return $this;
     }
 
-    public function getSenha(): string
+    public function getSenhaUsuario(): string
     {
-        return $this->senha;
+        return $this->senha_Usuario;
     }
 
-    public function setSenha(string $senha): self
+    public function setSenhaUsuario(string $senha_Usuario): self
     {
-        $this->senha = $senha;
+        $this->senha_Usuario = $senha_Usuario;
+
         return $this;
     }
 
-    public function getValor(): float
+    public function getValorUsuario(): float
     {
-        return $this->valor;
+        return $this->valor_Usuario;
     }
 
-    public function setValor(float $valor): self
+    public function setValorUsuario(float $valor_Usuario): self
     {
-        $this->valor = $valor;
+        $this->valor_Usuario = $valor_Usuario;
+
         return $this;
     }
 
-    public function isStatus(): bool
+    public function isStatusUsuario(): bool
     {
-        return $this->status;
+        return $this->status_Usuario;
     }
 
-    public function setStatus(bool $status): self
+    public function setStatusUsuario(bool $status_Usuario): self
     {
-        $this->status = $status;
+        $this->status_Usuario = $status_Usuario;
+
         return $this;
     }
 
@@ -110,7 +117,6 @@ class Usuario
         return $this;
     }
 
-    // Adicione aqui um método para obter o extrato do usuário
     public function obterExtrato(): array
     {
         // Aqui você irá buscar o extrato do usuário no banco de dados e retorná-lo
@@ -121,5 +127,5 @@ class Usuario
             // ... Adicione outras transações do extrato aqui
         ];
     }
-}
+    }
 ?>

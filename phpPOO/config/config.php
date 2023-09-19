@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost';
-$dbname = 'banco_usuarios';
+$dbname = 'Banco_Taurus';
 $username = 'root';
 $password = '';
 
