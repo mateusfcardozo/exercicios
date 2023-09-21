@@ -14,12 +14,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['cadastrar'])) {
         exit;
     }
 
-    $status = true;
+    $status_Usuario = true;
     $valor = 0;
 
     $usuario = new Usuario($nome, $cpf, $endereco, $idade, $senha);
-    $usuario->setStatus($status);
-    $usuario->setValor($valor);
+    $usuario->setStatusUsuario($status_Usuario);
+    $usuario->setValorUsuario($valor);          
 
     $db = require_once 'config.php';
     $usuarioDAO = new UsuarioDAO($db);
@@ -27,5 +27,28 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['cadastrar'])) {
 
     header("Location: index.php");
     exit;
+}
+if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['login'])) {
+    $cpf = $_POST['cpf'];
+    $senha = $_POST['senha'];
+
+    if (empty($cpf) || empty($senha)) {
+        echo "Todos os campos são obrigatórios.";
+        exit;
+    }
+
+    $db = require_once 'config.php';
+    $usuarioDAO = new UsuarioDAO($db);
+
+    $usuario = $usuarioDAO->buscarPorCpf($cpf);
+
+    if ($usuario && $usuario->getSenhaUsuario() === $senha) {
+    
+        header("Location: main.php");
+        exit;
+    } else {
+        echo "Credenciais inválidas. Tente novamente.";
+        exit;
+    }
 }
 ?>
