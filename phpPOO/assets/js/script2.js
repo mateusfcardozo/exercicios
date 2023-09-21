@@ -1,14 +1,9 @@
+function showInicioContent() {
+  document.querySelector('.meio-inicio').style.display = 'block';
+  document.querySelector('.meio-conta').style.display = 'none';
+}
 
-function hover(element) {
-    element.style.backgroundColor = '#fff';
-  }
-  
-  function unhover(element) {
-    element.style.backgroundColor = '#ccc';
-  }
-  
-  document.querySelectorAll('.sidebar ul li a').forEach(function(element) {
-    element.addEventListener('mouseenter', hover);
-    element.addEventListener('mouseleave', unhover);
-  });
-  
+function showContaContent() {
+  document.querySelector('.meio-inicio').style.display = 'none';
+  document.querySelector('.meio-conta').style.display = 'block';
+}

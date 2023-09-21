@@ -1,67 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    width: 960px;
-    margin: 0 auto;
-  }
-  
-  .sidebar {
-    width: 200px;
-    height: 100vh;
-    position: absolute;
-    left: 0;
-    background-color: #ccc;
-  }
-  
-  .sidebar h2 {
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar ul li {
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .sidebar ul li a {
-    color: #000;
-    text-decoration: none;
-  }
-  
-  .content {
-    width: 760px;
-    height: 100vh;
-    float: right;
-    background-color: #fff;
-  }
-  
-  .content h1 {
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .content p {
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .sidebar {
-      display: none;
-    }
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: azure;
+}
+
+nav.menu-lateral {
+  width: 250px;
+  height: 100%;
+  background-color: #063e4f;
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0 0 #00aaff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+.botao-expandir
+{
+  width: 100%;
+  padding-left: 10px;
+}
+.botao-expandir >i{
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+ul{
+  height: 100%;
+  list-style-type: none;
+}
+ul li.item-menu{
+  transition: 1s;
+}
+ul li.item-menu:hover{
+  background: #00aaff;
+}
+ul li.item-menu a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 4%;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+ul li.item-menu a .text-link{
+  margin-left: 40px;
+}
+ul li.item-menu a .icon >i{
+  font-size: 30px;
+}
+
+
+.Conteudo {
+  margin-left: 300px;
+}
+.meio-inicio {
+  padding: 200px;
+  background-color: black;
+  color: white;
+  display: none;
+}
+.meio-conta {
+  padding: 100px;
+  background-color: black;
+  color: white;
+  display: none;
+}
