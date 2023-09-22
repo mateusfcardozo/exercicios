@@ -49,7 +49,9 @@
         <div class="form-box-cadastro">
             <h3>Cadastro</h3>
             <br>
-            <form id="form-cadastro" action="admin.php">
+            <form id="form-cadastro" action="assets/php/class/admin.php" method="POST">
+
+
                 <div class="input-box">
                     <input type="text" name="nome" placeholder="Nome" required>
                 </div>
@@ -69,7 +71,8 @@
                 <div class="lembrar-senha">
                     <label> <input type="checkbox" name="termos">Aceito os termos e condições</label>
                 </div>
-                <button type="button" class="botaocadastro">Cadastrar-se</button>
+                <button type="submit" class="botaocadastro" name="cadastrar">Cadastrar-se</button>
+
                 <div class="cadastro-login">
                     <p>Já tem uma conta?
                         <a href="#" class="link-login" onclick="mostrarLogin()">Login</a>

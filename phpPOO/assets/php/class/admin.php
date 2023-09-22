@@ -1,6 +1,11 @@
 <?php
+require_once "config.php";
+
 require_once "Usuario.php";
 require_once "UsuarioDAO.php";
+
+// ...
+
 
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['cadastrar'])) {
     $nome = $_POST['nome'];
@@ -11,22 +16,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['cadastrar'])) {
 
     if (empty($nome) || empty($cpf) || empty($endereco) || empty($idade) || empty($senha)) {
         echo "Todos os campos são obrigatórios.";
-        exit;
+    } else {
+        $usuario = new Usuario($nome, $cpf, $endereco, $idade, $senha);
+
+        $usuarioDAO = new UsuarioDAO($conn);
+
+        try {
+            $usuarioDAO->cadastrar($usuario);
+            echo "Usuário cadastrado com sucesso!";
+        } catch (PDOException $e) {
+            echo "Erro ao cadastrar usuário: " . $e->getMessage();
+        }
     }
-
-    $status_Usuario = true;
-    $valor = 0;
-
-    $usuario = new Usuario($nome, $cpf, $endereco, $idade, $senha);
-    $usuario->setStatusUsuario($status_Usuario);
-    $usuario->setValorUsuario($valor);          
-
-    $db = require_once 'config.php';
-    $usuarioDAO = new UsuarioDAO($db);
-    $usuarioDAO->cadastrar($usuario);
-
-    header("Location: index.php");
-    exit;
 }
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['login'])) {
     $cpf = $_POST['cpf'];

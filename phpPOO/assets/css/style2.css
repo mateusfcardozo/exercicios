@@ -1,9 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 body {
   display: flex;
   align-items: center;
@@ -24,31 +25,34 @@ nav.menu-lateral {
   left: 0;
   display: flex;
   flex-direction: column;
-
 }
-.botao-expandir
-{
+
+.botao-expandir {
   width: 100%;
   padding-left: 10px;
 }
-.botao-expandir >i{
+
+.botao-expandir > i {
   color: white;
   font-size: 24px;
   cursor: pointer;
   margin-bottom: 20px;
 }
-ul{
+
+ul {
   height: 100%;
   list-style-type: none;
 }
-ul li.item-menu{
+
+ul li.item-menu {
   transition: 1s;
 }
-ul li.item-menu:hover{
 
+ul li.item-menu:hover {
   background: #00aaff;
 }
-ul li.item-menu a{
+
+ul li.item-menu a {
   color: white;
   text-decoration: none;
   font-size: 20px;
@@ -57,48 +61,143 @@ ul li.item-menu a{
   margin-bottom: 20px;
   line-height: 40px;
 }
-ul li.item-menu a .text-link{
+
+ul li.item-menu a .text-link {
   margin-left: 40px;
 }
-ul li.item-menu a .icon >i{
+
+ul li.item-menu a .icon > i {
   font-size: 30px;
 }
-
 
 .Conteudo-popup {
   position: absolute;
   margin-left: 200px;
-
 }
 
 .meio-inicio {
   position: relative;
-  padding: 100px;
+  padding: 20px;
   border: 2px solid black;
- background: transparent;
+  background: transparent;
   color: black;
   display: none;
 }
-.meio-inicio h2{
+
+.meio-inicio h2 {
   font-size: 3em;
   color: #162938;
+  margin-bottom: 20px;
 }
+
+.meio-inicio-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
 .meio-inicio li {
   font-size: 30px;
- }
+  margin-bottom: 10px;
+}
+
 .meio-conta {
-  padding: 100px;
+  padding: 20px;
   border: 3px solid black;
   background-color: azure;
   color: black;
   display: none;
 }
-.meio-conta h2{
+
+.meio-conta h2 {
   font-size: 3em;
   color: #162938;
+  margin-bottom: 20px;
 }
-.meio-conta li,button {
-  margin-bottom: 12px;
-  color: #00aaff;
+
+.meio-conta-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.meio-conta li {
   font-size: 30px;
- }
+  margin-bottom: 10px;
+}
+.button-link {
+  display: block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+}
+
+input[type="number"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.meio-inicio-content {
+  margin-bottom: 20px;
+}
+
+.meio-inicio- h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+li {
+  margin-bottom: 10px;
+}
+.button-alterar {
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+
+  &:active {
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+  }
+}
+
+.button-cancelar {
+  background-color: #FF0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+
+  &:hover {
+    background-color: #FF7F00;
+  }
+
+  &:active {
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+  }
+}
+
