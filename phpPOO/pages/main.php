@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/phpPOO/assets/js/script2.js"></script>
-  <link rel="stylesheet" href="/phpPOO/assets/css/style2.css">
+  <script src="/exercicios/phpPOO/assets/js/script2.js"></script>
+  <link rel="stylesheet" href="/exercicios/phpPOO/assets/css/style2.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

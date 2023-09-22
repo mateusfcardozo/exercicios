@@ -1,6 +1,6 @@
 <?php
-require_once 'config.php';
-require_once 'Usuario.php';
+require_once "../../../config/config.php";
+require_once '../class/Usuario.php';
 
 class UsuarioDAO
 {
@@ -13,29 +13,6 @@ class UsuarioDAO
 
     public function cadastrar(Usuario $usuario)
     {
-        $this->db->set_charset("utf8"); // Certifique-se de definir o conjunto de caracteres corretamente
-        $sql = "INSERT INTO usuarios (nome, cpf, endereco, idade, senha, valor, status) VALUES (?, ?, ?, ?, ?, ?, ?)";
-        $stmt = $this->db->prepare($sql);
-    
-        // Verifique se a preparação da consulta foi bem-sucedida
-        if (!$stmt) {
-            die('Erro na preparação da consulta: ' . $this->db->error);
-        }
-    
-        // Bind dos parâmetros
-        $stmt->bind_param("sssisis", $usuario->getNomeUsuario(), $usuario->getCpfUsuario(), $usuario->getEnderecoUsuario(), $usuario->getIdadeUsuario(), $usuario->getSenhaUsuario(), $usuario->getValorUsuario(), $usuario->isStatusUsuario());
-    
-        // Execute a consulta
-        $result = $stmt->execute();
-    
-        // Verifique se a execução foi bem-sucedida
-        if (!$result) {
-            die('Erro na execução da consulta: ' . $stmt->error);
-        }
-    
-        $stmt->close(); // Feche a consulta
-    
-        return $result;
     }
     
     public function atualizar(Usuario $usuario)

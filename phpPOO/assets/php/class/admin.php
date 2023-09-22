@@ -1,10 +1,7 @@
 <?php
-require_once "config.php";
-
+require_once "../../../config/config.php";
 require_once "Usuario.php";
-require_once "UsuarioDAO.php";
-
-// ...
+require_once "../DAO/UsuarioDAO.php";
 
 
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['cadastrar'])) {
