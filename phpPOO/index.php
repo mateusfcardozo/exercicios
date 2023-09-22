@@ -23,7 +23,7 @@
         </nav>
     </header1>
     <div class="Login-cadastro-popup" id="loginCadastroPopup">
-        <span class="icon-fechar" onclick="fecharPopup()"><ion-icon name="close-outline"></ion-icon></span>
+        <span class="icon-fechar" onclick="fecharPopup()"><i class="bi bi-x-lg"></i></span>
         <div class="form-box-Login">
             <h3>Login</h3>
             <br>
