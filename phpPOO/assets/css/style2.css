@@ -65,7 +65,7 @@ ul li.item-menu a .icon >i{
 }
 
 
-.Conteudo {
+.Conteudo-popup {
   position: absolute;
   margin-left: 200px;
 
@@ -97,7 +97,7 @@ ul li.item-menu a .icon >i{
   font-size: 3em;
   color: #162938;
 }
-.meio-conta li {
+.meio-conta li,button {
   margin-bottom: 12px;
   color: #00aaff;
   font-size: 30px;
