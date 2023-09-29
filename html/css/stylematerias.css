@@ -55,13 +55,16 @@
     transform-origin: left;
     transform: scaleX(1);
   }
-main {
+  main {
     flex: 1;
-    margin-top: 20px;
-  }
+    padding: 60px;
+    border: 1px solid #ccc;
+    margin-top: 200px; 
+}
 main h2{
     top: 0;
     left: 0;
+    
 }main p {
   font-weight: 500;
   position: relative;
@@ -70,10 +73,9 @@ main h2{
   font-size: 1.1em;
   margin-left: 0px;
 }
-  .materia {
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
+main .materia h2 {
+  top: 0;
+  left: 0;
 }
 
   footer {
